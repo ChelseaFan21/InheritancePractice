@@ -10,31 +10,30 @@ package inheritancepractice;
  * @author brandonstoiber
  */
 public class Mammal extends Animal {
-    private boolean produceMilk;
-    private boolean hair;
 
-    public boolean isProduceMilk() {
+    private String produceMilk;
+    private String hair;
+
+    public String getProduceMilk() {
         return produceMilk;
     }
 
-    public void setProduceMilk(boolean produceMilk) {
+    public void setProduceMilk(String produceMilk) {
         this.produceMilk = produceMilk;
     }
 
-    public boolean isHair() {
+    public String getHair() {
         return hair;
     }
 
-    public void setHair(boolean hair) {
+    public void setHair(String hair) {
         this.hair = hair;
     }
 
-   
-    
-    public void feedBaby(){
-        if(produceMilk == true){
-            System.out.println("This is a mammal");
-        }
+    public void feedBaby() {
+
+        System.out.println("Baby is fed.");
+
     }
-    
+
 }

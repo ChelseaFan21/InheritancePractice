@@ -9,7 +9,7 @@ package inheritancepractice;
  *
  * @author brandonstoiber
  */
-public class Stormtrooper {
+public class Stormtrooper extends Empire {
     private String run;
     private String search;
 
