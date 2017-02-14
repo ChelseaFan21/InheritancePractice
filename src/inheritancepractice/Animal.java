@@ -11,15 +11,15 @@ package inheritancepractice;
  * @author brandonstoiber
  */
 public class Animal {
-    private String eat;
+    private String name;
     private String age;
 
-    public String getEat() {
-        return eat;
+    public String getName() {
+        return name;
     }
 
-    public void setEat(String eat) {
-        this.eat = eat;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getAge() {
@@ -30,8 +30,8 @@ public class Animal {
         this.age = age;
     }
     
-    public void sleep(){
-        System.out.println("Sleeping");
+    public String toString(){
+        return "Name = " + name + ", and is " + age + " years old.";
     }
     
     

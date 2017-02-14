@@ -10,26 +10,32 @@ package inheritancepractice;
  * @author brandonstoiber
  */
 public class Reptile {
-    private String scales;
-    private String coldBlooded;
+    private String scaleColor;
+    private boolean coldBlooded;
 
     public String getScales() {
-        return scales;
+        return scaleColor;
     }
 
-    public void setScales(String scales) {
-        this.scales = scales;
+    public void setScales(String scaleColor) {
+        this.scaleColor = scaleColor;
     }
 
-    public String getColdBlooded() {
+    public boolean isColdBlooded() {
         return coldBlooded;
     }
 
-    public void setColdBlooded(String coldBlooded) {
+    public void setColdBlooded(boolean coldBlooded) {
         this.coldBlooded = coldBlooded;
     }
+
+   
     
     public void baskInSun(){
-        System.out.println("Time to warm up the blood");
+        if(!isColdBlooded()){
+        System.out.println("You are not a reptile.");
+        } else {
+            System.out.println("You are sunning on a rock.");
+        }
     }
 }

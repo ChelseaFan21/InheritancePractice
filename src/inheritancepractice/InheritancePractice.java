@@ -18,31 +18,11 @@ public class InheritancePractice {
         // TODO code application logic here
         
      
-        Bear newBear = new Bear();
-        Snake newSnake = new Snake();
-        Beaver newBeaver = new Beaver();
-        
-        System.out.println("Bear");
-        newBear.findCave();
-        newBear.feedBaby();
-        
-        System.out.println("Snake");
-        newSnake.baskInSun();
-        
-        System.out.println("Beaver");
-        newBeaver.buildDam();
-        newBeaver.sleep();
+   
         
         
-        GalacticEmpireRebel newSolo = new GalacticEmpireRebel();
-        GalacticEmpireImperial newTrooper = new GalacticEmpireImperial();
-        System.out.println("Han Solo");
-        newSolo.goOnMission();
         
       
-        
-        System.out.println("Stormtrooper");
-        newTrooper.fireBlaster();
         
     }
     

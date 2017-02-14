@@ -10,17 +10,20 @@ package inheritancepractice;
  * @author brandonstoiber
  */
 public class GalacticEmpireImperial extends StarWarsCharacter {
-    private String run;
+    private boolean forceWielder = false;
     private String search;
 
-    public String getRun() {
-        return run;
+    public boolean isForceWielder() {
+        return forceWielder;
     }
 
-    public void setRun(String run) {
-        this.run = run;
+    public void setForceWielder(boolean forceWielder) {
+        this.forceWielder = forceWielder;
     }
 
+   
+
+    
     public String getSearch() {
         return search;
     }
@@ -28,8 +31,11 @@ public class GalacticEmpireImperial extends StarWarsCharacter {
     public void setSearch(String search) {
         this.search = search;
     }
-    
-    public void fireBlaster(){
-        System.out.println("You fired and missed the target.");
+    public void isSith(){
+        if(forceWielder == true){
+            System.out.println("You are a sith lord.");
+        }else{
+            System.out.println("You are a soldier of the galactic empire.");
+        }
     }
 }

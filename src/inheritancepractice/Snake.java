@@ -10,26 +10,34 @@ package inheritancepractice;
  * @author brandonstoiber
  */
 public class Snake extends Reptile{
-    private String slither;
-    private String swallow;
+    private boolean slither;
+    private boolean swallow;
 
-    public String getSlither() {
+    public boolean isSlither() {
         return slither;
     }
 
-    public void setSlither(String slither) {
+    public void setSlither(boolean slither) {
         this.slither = slither;
     }
 
-    public String getSwallow() {
+    public boolean isSwallow() {
         return swallow;
     }
 
-    public void setSwallow(String swallow) {
+    public void setSwallow(boolean swallow) {
         this.swallow = swallow;
     }
-    
-    public void bite(){
-        System.out.println("The snake is poisonous.");
+    public void isMoving(){
+        if(!isSlither()){
+            System.out.println("You are resting.");
+        }else{
+            System.out.println("You are searching for food.");
+        }
     }
+    
+
+    
+    
+    
 }

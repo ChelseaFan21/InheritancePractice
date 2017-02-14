@@ -10,16 +10,18 @@ package inheritancepractice;
  * @author brandonstoiber
  */
 public class GalacticEmpireRebel extends StarWarsCharacter{
-    private String charm;
+    private boolean forceUser = false;
     private String smuggle;
 
-    public String getCharm() {
-        return charm;
+    public boolean isForceUser() {
+        return forceUser;
     }
 
-    public void setCharm(String charm) {
-        this.charm = charm;
+    public void setForceUser(boolean forceUser) {
+        this.forceUser = forceUser;
     }
+
+   
 
     public String getSmuggle() {
         return smuggle;
@@ -29,7 +31,11 @@ public class GalacticEmpireRebel extends StarWarsCharacter{
         this.smuggle = smuggle;
     }
     
-    public void sneakIntoBase (){
-            System.out.println("You have snuck into the imperial base.");
-    }
+   public void isJedi(){
+       if(forceUser == true){
+           System.out.println("You are a jedi.");
+       }else{
+           System.out.println("You are a member of the rebellion.");
+       }
+   }
 }
