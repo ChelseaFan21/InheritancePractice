@@ -9,27 +9,31 @@ package inheritancepractice;
  *
  * @author brandonstoiber
  */
-public class StarWarsCharacter {
-    private String age;
-    private String communicate;
+public class StarWarsCharacter extends FictionalCharacter{
+    private boolean flyStarShip = false;
+    private boolean fireBlaster = false;
 
-    public String getAge() {
-        return age;
+    public boolean isFlyStarShip() {
+        return flyStarShip;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setFlyStarShip(boolean flyStarShip) {
+        this.flyStarShip = flyStarShip;
     }
 
-    public String getCommunicate() {
-        return communicate;
+    public boolean isFireBlaster() {
+        return fireBlaster;
     }
 
-    public void setCommunicate(String communicate) {
-        this.communicate = communicate;
+    public void setFireBlaster(boolean fireBlaster) {
+        this.fireBlaster = fireBlaster;
     }
     
-    public void talkToCharacter(){
-        System.out.println("Say hello to another character.");
+    public void isDogFighting(){
+        if(flyStarShip == true){
+            if(fireBlaster == true){
+                System.out.println("You are in a dog fight.");
+            }
+        }
     }
 }

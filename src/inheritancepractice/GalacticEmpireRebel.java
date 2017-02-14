@@ -9,7 +9,7 @@ package inheritancepractice;
  *
  * @author brandonstoiber
  */
-public class HanSolo extends Rebel{
+public class GalacticEmpireRebel extends StarWarsCharacter{
     private String charm;
     private String smuggle;
 

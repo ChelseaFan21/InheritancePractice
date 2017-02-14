@@ -34,20 +34,16 @@ public class InheritancePractice {
         newBeaver.sleep();
         
         
-        HanSolo newSolo = new HanSolo();
-        LukeSkywalker newSkywalker = new LukeSkywalker();
-        Stormtrooper newTrooper = new Stormtrooper();
+        GalacticEmpireRebel newSolo = new GalacticEmpireRebel();
+        GalacticEmpireImperial newTrooper = new GalacticEmpireImperial();
         System.out.println("Han Solo");
         newSolo.goOnMission();
-        newSolo.talkToCharacter();
         
-        System.out.println("Luke Skywalker");
-        newSkywalker.goOnMission();
-        newSkywalker.saveFriends();
+      
         
         System.out.println("Stormtrooper");
         newTrooper.fireBlaster();
-        newTrooper.captureRebels();
+        
     }
     
 }
